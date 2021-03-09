@@ -1,9 +1,24 @@
-
-
-.magic-image{
-    filter: grayscale(100%);
-    transition: 0.3s;
+.magic-image-wrapper{
+    position: relative;
 }
+
+.magic-image-wrapper div{
+    position: absolute;
+}
+
+.magic-image-wrapper div:first-child{
+    filter: grayscale(100%);
+}
+
+.magic-image-wrapper div:last-child{
+    position: absolute;
+    width : 220px;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+
 
 .magic-image.active{
     filter: grayscale(0%);
